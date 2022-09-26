@@ -1,0 +1,34 @@
+.slider .slick-track {
+	display: flex;
+	padding: 15px;
+	position: relative;
+	height: 1000px;
+}
+
+.slider .slick-list {
+	overflow: hidden;
+}
+
+.slider .slick-slide {
+	margin: 0 300px;
+	max-width: 1000px;
+}
+
+.slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	font-size: 0;
+	width: 25px;
+	height: 20px;
+	z-index: 100;
+}
+
+.slider .slick-next {
+	left: 95%;
+	background: url("../../resourses/images/next arrow.svg") 0 0 / 100% no-repeat;
+}
+
+.slider .slick-prev {
+	left: 3%;
+	background: url("../../resourses/images/previous arrow.svg") 0 0 / 100% no-repeat;
+}

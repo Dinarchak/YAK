@@ -15,7 +15,7 @@
 	border-radius: 20px;
 	background: #f7f7f7;
 	border: 3px solid #b0afac;
-	max-width: 60%;
+	max-width: 80%;
 	margin: 0 auto;
 	position: relative;
 }
@@ -69,4 +69,13 @@
 	padding: 5px 0 0 0;
 	background: #9097A2;
 	text-align: center;
+}
+
+@media (max-width: 1100px) {
+	.progects > div {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1fr;
+	grid-row-gap: 60px;
+}
 }

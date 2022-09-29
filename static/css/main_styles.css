@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 @import "default_styles.css" screen;
-@import "slider_styles.css" screen;
 @import "template_styles.css" screen;
 @import "desription_styles.css" screen;
 @import "progects_styles.css" screen;
+
+
+.main-block > * {
+	margin: 0 0 100px 0;
+}
 
 .motivation {
 	display: flex;

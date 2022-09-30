@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 @import "default_styles.css" screen;
 @import "template_styles.css" screen;
-@import "desription_styles.css" screen;
-@import "progects_styles.css" screen;
 
 
 .main-block > * {
@@ -17,4 +15,120 @@
 
 .motivation .img {
 	margin-left: 40px;
+}
+
+.progress-bar {
+	z-index: 1;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #c28c53;
+	width: 0;
+	height: 0.3rem;
+}
+
+
+.description {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.description-hellow {
+	margin: 0 40px 0 0;
+}
+
+.description__code {
+	font-size: 1.1rem;
+	line-height: 1.3rem;
+	padding: 15px;
+	border-radius: 20px;
+	box-shadow: 5px 3px 10px 5px #a3a3a3;
+	width: 70%;
+}
+
+.description-code span.bold {
+	font-weight: 700;
+}
+
+.progects > div {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-row-gap: 60px;
+	grid-column-gap: 30px;
+}
+
+.progects > .title {
+	text-align: center;
+}
+
+.progect-desc {
+	padding-top: 20px;
+	border-radius: 20px;
+	background: #f7f7f7;
+	border: 3px solid #b0afac;
+	max-width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.progect-desc a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1;
+}
+
+.progect-desc a > div {
+	width: 1.5rem;
+	height:1.5rem;
+}
+
+.progect-desc .img {
+	margin: 0 20px;
+}
+
+.progect-features {
+	counter-reset: li 0;
+	text-align: left;
+	margin: 20px 0 0 30px;
+}
+
+.progect-features__item {
+	margin: 10px 20px;
+	padding: 5px;
+	background: #D3D4DA;
+	color: #444;
+	position: relative;
+	width: 80%;
+}
+
+.progect-features__item > p {
+	text-overflow: ellipsis;  
+  	overflow: hidden;
+  	white-space: nowrap;
+}
+
+.progect-features__item:before {
+	content: counter(li);
+	counter-increment: li;
+	font-family: "Lucida Sans";
+	position: absolute;
+	left: -1.8rem;
+	top: 0;
+	width: 1.6rem;
+	height: 1.6rem;
+	padding: 5px 0 0 0;
+	background: #9097A2;
+	text-align: center;
+}
+
+@media (max-width: 1100px) {
+	.progects > div {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1fr;
+	grid-row-gap: 60px;
+}
 }

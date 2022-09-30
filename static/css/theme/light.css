@@ -5,5 +5,10 @@ html {
 }
 
 .progect-desc, .description__code{
-  background: #f7f2f2;
+  border: 3px solid #697278;
+  background: #ede9e9;
+}
+
+.motivation .img {
+  border: 3px solid #697278;
 }

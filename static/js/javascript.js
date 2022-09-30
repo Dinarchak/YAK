@@ -1,17 +1,28 @@
 function progressBar() {
-    // Узнаем на сколько страница прокручена
-    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
-    // Узнаем высоту всей страницы
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    // Получаем в % на сколько прокручена страница
-    let scrolled = scroll / height * 100;
-
-    // Подставляем % прокрутки в ширину нашей линии
-    document.querySelector('.progress-bar').style.width = scrolled + '%';
+    let scroll = document.body.scrollTop || document.documentElement.scrollTop
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    let scrolled = scroll / height * 100
+    document.querySelector('.progress-bar').style.width = scrolled + '%'
 }
 
-// Запускаем функцию, когда пользователя скролит
-window.addEventListener('scroll', progressBar);
+window.addEventListener('scroll', progressBar)
+
+
+if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+	console.log("Установлена светлая тема по умолчанию")
+    document.documentElement.style.display = 'none';
+    document.head.insertAdjacentHTML(
+      'beforeend',
+      '<link rel="stylesheet" href="static/css/theme/light.css" onload="document.documentElement.style.display = \'\'">',
+    );
+} else {
+	if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		console.log("Значок сменен")
+		document.querySelectorAll(".progect-desc > a img").forEach(function(i) {i.setAttribute("src", "resourses/images/download-icon-dark.svg")})
+	}
+}
+
+
 
 
 console.log('ok')

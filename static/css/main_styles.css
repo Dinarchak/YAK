@@ -43,7 +43,7 @@
 	line-height: 1.3rem;
 	padding: 15px;
 	border-radius: 20px;
-	box-shadow: 5px 3px 10px 5px #a3a3a3;
+	border: 2px solid #697278;
 	width: 70%;
 }
 
@@ -66,8 +66,6 @@
 .progect-desc {
 	padding-top: 20px;
 	border-radius: 20px;
-	background: #f7f7f7;
-	border: 3px solid #b0afac;
 	max-width: 80%;
 	margin: 0 auto;
 	position: relative;

@@ -1,0 +1,9 @@
+html {
+  background: #f0f0f0;
+  border-color: #ede9e9;
+  color: #0d1117;
+}
+
+.progect-desc, .description__code{
+  background: #f7f2f2;
+}

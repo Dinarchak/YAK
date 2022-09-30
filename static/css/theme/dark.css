@@ -1,0 +1,13 @@
+html {
+  background: #090c10;
+  border-color: #30363d;
+  color: #f0f2f8;
+}
+
+.progect-desc, .description__code{
+  background: #293238;
+}
+
+.line {
+  background-color: rgb(233, 30, 99);
+}

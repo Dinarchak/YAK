@@ -1,14 +1,40 @@
 html {
-  background: #f0f0f0;
-  border-color: #ede9e9;
-  color: #0d1117;
+  	background: #f0f0f0;
+  	border-color: #ede9e9;
+  	color: #0d1117;
 }
 
-.progect-desc, .description__code{
-  border: 3px solid #697278;
-  background: #ede9e9;
+.progect-desc{
+  	border: 3px solid #697278;
+  	background: #ede9e9;
 }
 
 .motivation .img {
-  border: 3px solid #697278;
+  	border: 3px solid #697278;
+}
+
+.code-block {
+  	border: 3px solid #697278;
+  	background: white;
+  	color: #0d1117;
+}
+
+.code-line, .code-line:before {
+  	color: rgb(10, 10, 10);
+}
+
+.code-string {
+  	color: rgb(6, 125, 23);
+}
+
+.code-key-word {
+  	color: rgb(0, 49, 188);
+}
+
+.code-comment {
+  	color: rgb(180, 183, 177);
+}
+
+.code-semicolon {
+    color: #0d1117;
 }

@@ -38,3 +38,25 @@
 	margin: 7px auto;
 	background: #b7e6e8;
 }
+
+.code-block {
+	counter-reset: line-num;
+}
+
+.code-line {
+	position: relative;
+	min-height: 1.3rem;
+}
+
+.code-line:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: counter(line-num);
+	counter-increment: line-num;
+	opacity: 0
+}
+
+.code-line.written:before {
+	opacity: 1;
+}

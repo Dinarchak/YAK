@@ -3,16 +3,13 @@
 @import "default_styles.css" screen;
 @import "template_styles.css" screen;
 
-.main-block {
-
-}
-
 .main-block > * {
 	margin: 0 0 100px 0;
 }
 
 .motivation {
 	display: flex;
+	margin: 0;
 	justify-content: space-between;
 }
 

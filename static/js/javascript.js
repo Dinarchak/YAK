@@ -70,7 +70,26 @@ function write() {
 
 code_area = document.querySelectorAll('.code-line')
 
-  setTimeout(write, 50)
+setTimeout(write, 50)
+
+function get_coords(e) {
+	let card = e.target.closest('.progect-desc')
+	let a = card.getBoundingClientRect()
+	let zero = [a.x + Math.abs(a.width) / 2, a.y + Math.abs(a.height) / 2]
+	let mouse = [e.clientX - zero[0], e.clientY - zero[1]]
+	let rotateX = (mouse[0]) / (Math.abs(a.width) / 2) * 3
+	let rotateY = (mouse[1]) / (Math.abs(a.height) / 2) * 3
+	console.log(rotateY + '    ' + rotateX)
+	card.style.transform = `skew(${rotateY}deg, ${rotateX}deg)`
+}
+
+
+document.querySelectorAll('.progect-desc').forEach(function(i) {
+	i.addEventListener("mousemove", get_coords)
+	i.addEventListener("mouseout", (e) => {
+		e.target.closest('.progect-desc').style.transform = 'skew(0deg, 0deg)'
+	})
+})
 
 console.log('ok')
 	

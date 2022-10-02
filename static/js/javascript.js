@@ -31,6 +31,7 @@ class_code = [
   'age = get_age(birth_day);<span class="code-comment">// 17</span>',
   'school = <span class="code-string">"СУНЦ IT лицей КФУ"</span>;',
   'city = <span class="code-string">"Казань"</span>;',
+  'email = <span class="code-string">"jjustdinar@gmail.com"</span>;',
   'hobbies = {<span class="code-string"> "frontend"</span>, <span class="code-string">"olympiad programming"</span>};',
   '}'
 ]
